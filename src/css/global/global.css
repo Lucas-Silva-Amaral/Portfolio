@@ -6,9 +6,9 @@ li {
   padding: 0%;
   list-style: none;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-size: 1em;
+  font-size: 1.04em;
   line-height: 1.5em;
+  font-family: "montserrat", sans-serif;
 }
 img {
   max-width: 100%;
@@ -17,5 +17,4 @@ img {
 /* ------- Size icons navbar ------- */
 .material-icons-outlined.md-36 {
   font-size: 25px;
-  color: var();
 }
