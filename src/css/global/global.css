@@ -1,0 +1,20 @@
+/* ------- Reset Css -----*/
+*,
+a,
+li {
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.04em;
+  line-height: 1.5em;
+  font-family: "montserrat", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+
+/* ------- Size icons navbar ------- */
+.material-icons-outlined.md-36 {
+  font-size: 25px;
+}

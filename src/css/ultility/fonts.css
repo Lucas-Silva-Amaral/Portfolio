@@ -1,0 +1,11 @@
+:root {
+  --font-Mont: "Montserrat", sans-serif;
+  --font-Mont-Bold: "Montserrat", sans-serif;
+  --font-pop: "Poppins", sans-serif;
+  --font-pop-Bold: "Poppins", sans-serif;
+}
+
+.fSNav {
+  font-size: 1.04em;
+  line-height: 1.5em;
+}
