@@ -1,2 +1,3 @@
-import renderNavBar from "../screens/NavBar/NavBar.js"
-renderNavBar()
+import renderHeader from "../screens/NavBar/NavBar.js"
+
+renderHeader()

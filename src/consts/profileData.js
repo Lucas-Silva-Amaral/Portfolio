@@ -1,17 +1,8 @@
-export const logoSocial = [
-  {
-    name: "facebook",
-    iconRede: "src/assets/facebook.svg",
-    url: "https://www.facebook.com/lucas.surita.3/",
-  },
-  {
-    name: "github",
-    iconRede: "src/assets/github.svg",
-    url: "https://github.com/Lucas-Silva-Amaral",
-  },
-  {
-    name: "linkedin",
-    iconRede: "src/assets/linkedin.svg",
-    url: "https://www.linkedin.com/in/lucas-amaral-1b174b8b/",
-  },
-]
+// ------- Profile Data -------
+export const profile = {
+  name: "Lucas Silva Amaral",
+  profission: "Desenvolvedor Front-end",
+  img: "src/assets/lucasyo.png",
+  about:
+    " Olá, me chamo Lucas e tenho 26 anos, atualmente sou discente de Análise e Desenvolvimento de Sistemas no Senac Pelotas. Desde pequeno sou apaixonado por tecnologia.Então em 2021 descobri esta área sensacional que é a programação, paixão a primeira vista, desde então estou nesta caminhada em busca de conhecimento",
+}

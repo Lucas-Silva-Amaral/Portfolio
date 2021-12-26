@@ -1,20 +1,21 @@
-import { navDataLinks, profile } from "../../consts/navDataLinks.js"
-import { logoSocial } from "../../consts/profileData.js"
+import { navDataLinks, logoSocial, titles } from "../../consts/Data.js"
+import { profile } from "../../consts/profileData.js"
+import { navHover } from "../../js/moldules/NavBar/navBarHover.js"
 
-const rederNavBar = () => {
+const renderHeader = () => {
   const navBar = () => {
-    const nav = document.querySelector("#nav")
-    nav.innerHTML = `
-    <header class="header">
+    const header = document.querySelector("#header")
+    header.innerHTML = `
+    <nav id="nav">
     <div class="divLogo">
     <img src=${profile.img} alt="${profile.name}" class="logo">
     </div>
-    <ul class="ulLinks fSNav">
+    <ul class="ulLinks">
     ${navDataLinks
       .map(
         (link) => `
       <li class="liLinks">
-        <a href="${link.href}">
+        <a href="${link.href}" class="linksHover">
           <i class="material-icons-outlined md-36">${link.icon}</i>
           <span class="fSNav">${link.name}</span>
         </a>
@@ -25,14 +26,14 @@ const rederNavBar = () => {
     </ul>
     <div class="divSocial">
     <div>
-        <span class="fSNav">Find in me</span>
+        <span>${titles.titleFooter}</span>
     </div>
     <ul class="ulSocial">
     ${logoSocial
       .map(
         (link) => `
       <li>
-        <a href="${link.url}">
+        <a href="${link.url}" class="socialLink">
           <img class="iSocial" src="${link.iconRede}" alt="${link.name}">
         </a>
       </li>
@@ -41,10 +42,11 @@ const rederNavBar = () => {
       .join("")}
     </ul>
     </div>
-    </header>
+    </nav>
       `
   }
 
   navBar()
+  navHover()
 }
-export default rederNavBar
+export default renderHeader
